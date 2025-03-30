@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/app.css">
+<title>Visca Eri.</title>
+</head>
+<body>
+
+   <div id="grid">
+      <header>
+         <div id="mobMen" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+         </div>
+         <div id="menu">
+            <a href="#home" title="home" onclick="toggleMenu()">Home</a>
+            <a href="#about" title="about" onclick="toggleMenu()">About</a>
+            <a href="#services" title="services" onclick="toggleMenu()">Services</a>
+            <a href="#contact" title="contact" onclick="toggleMenu()">Contact</a>
+         </div>
+         <div class="logo">
+            <img src="assets/images/logoV.png" alt="logo">
+         </div>
+         <div class="socialIcon">
+            <img src="assets/images/fac.png" alt="social icon">
+            <img src="assets/images/twi.png" alt="social icon">
+            <img src="assets/images/link.png" alt="social icon">
+         </div>
+         <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+         </nav>
+         <h1>Visca Eri-Shop</h1>
+      </header>
+      <div id="home">
+         <img id="largeImage" src="assets/images/thumb4.png" alt="image">
+         <div class="thumbnails">
+            <img src="assets/images/thumb1.png" alt="images">
+            <img src="assets/images/thumb2.png" alt="images">
+            <img src="assets/images/thumb3.png" alt="images">
+            <img src="assets/images/thumb5.png" alt="images">
+         </div>
+      </div>
+      <div id="about">
+         <h1>About</h1>
+         <p>
+            Thumbnails are smaller preview images that serve as visual representations of a larger image or content.
+            In our gallery, clicking on any thumbnail will display the corresponding large image,allowing you to explor 
+            detailed visuals with ease. Thumbnails make navigation intuitive and improve user experience by providing 
+            a quick way to preview and select content without needing to load large images every time.
+         </p>
+      </div>
+      <div id="services">
+            <img src="assets/images/elec1.png" alt="electronic">
+            <img src="assets/images/elec2.png" alt="electronic">
+            <img src="assets/images/elec3.png" alt="electronic">
+            <img src="assets/images/ele.png" alt="electronic">
+            <img src="assets/images/elec9.png" alt="electronic">
+            <img src="assets/images/elec10.png" alt="electronic">
+            <img src="assets/images/elec7.png" alt="electronic">
+            <img src="assets/images/elec8.png" alt="electronic">
+            <img src="assets/images/elec9.png" alt="electronic">
+         </div>
+      <div id="contact">
+         <div class="gridContainer">
+         <form action="submit_form" method="post">
+            <h1>Get in touch</h1>
+            
+            <label for="name">firstName:</label>
+            <input type="text" id="name" name="name" required placeholder="firstName">
+            
+            <label for="name">lastName:</label>
+            <input type="text" id="name" name="name" required placeholder="lastName">
+            
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required placeholder="email">
+
+            <label for="message">message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="your message"></textarea>
+
+            <button type="submit">Send Message</button>
+         </form>
+         <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15392.078669661176!2d38.90567345005628!3d15.321166302656286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x166df23bb4c933a9%3A0xb8c1b327af63f5c5!2sAsmara%2C%20Eritrea!5e0!3m2!1sen!2sca!4v1743264166561!5m2!1sen!2sca"
+               width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+         </div>
+         </div>
+      </div>
+
+      <footer>&copy; Nani17.MAU</footer>
+   </div>
+   <script src="scripts/app.js"></script>
+   <script src="scripts/jquery.js"></script> 
+</body>
+</html>

@@ -135,7 +135,7 @@ header h1 {
    border-right: 1px solid #0d0000;
  }
  #largeImage {
-   width: 250px;
+   width: 100%;
    height: auto;
    display: block;
    border-radius: 10px;
@@ -151,7 +151,7 @@ header h1 {
 }
 
 .thumbnails img {
-   width: 80px;
+   width: 30%;
    height: auto;
    cursor: pointer;
    border-radius: 5px;
@@ -166,7 +166,7 @@ header h1 {
    display: grid;
    grid-area: abt;
    width: 100%;
-   padding: 50px;
+   padding: 30px;
    background: #ccc;
    border-bottom: 1px solid #fff;
    border-right: 1px solid #0a0101;
@@ -183,7 +183,8 @@ header h1 {
 }
 #about p {
    font-size: 1em;
-   padding: 10px 10px;
+   padding: 0 10px;
+   margin-bottom: 90px;
    line-height: 1.1;
    color: #100303;
 }
@@ -272,14 +273,15 @@ header h1 {
       grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: minmax(100px, auto);
       grid-template-areas: 
-        "hdr hdr hdr hdr hdr hdr"
-        "hom hom hom hom hom hom"
-        "abt abt abt abt abt abt"
-        "ser ser ser ser ser ser"
-        "con con con con con con"
-        "ftr ftr ftr ftr ftr ftr";
+        "hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr"
+        "hom hom hom hom hom hom hom hom hom hom hom hom"
+        "abt abt abt abt abt abt abt abt abt abt abt abt"
+        "ser ser ser ser ser ser ser ser ser ser ser ser"
+        "con con con con con con con con con con con con"
+        "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
   }
   header {
+    width: 100%;
    height: 500px;
   }
   header h1 {
@@ -388,7 +390,7 @@ header h1 {
    grid-area: con;
    width: 100%;
    padding: 45px;
-   background: #fff;
+   background: #555353;
    border-bottom: 1px solid #fff;
    border-right: 1px solid #fff;
    
@@ -432,10 +434,11 @@ header h1 {
    border: 2px solid #000;
  }
  footer {
-   padding-top: 25px;
-   height: auto;
-   margin-top: -10px;
-   background: #fff;
+  width: 100%;
+  padding-top: 35px;
+  height: 100px;
+  margin-top: -1px;
+  background: #fff;
  }
 
 }

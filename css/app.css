@@ -273,12 +273,12 @@ header h1 {
       grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: minmax(100px, auto);
       grid-template-areas: 
-        "hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr hdr"
-        "hom hom hom hom hom hom hom hom hom hom hom hom"
-        "abt abt abt abt abt abt abt abt abt abt abt abt"
-        "ser ser ser ser ser ser ser ser ser ser ser ser"
-        "con con con con con con con con con con con con"
-        "ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr ftr";
+        "hdr"
+        "hom"
+        "abt"
+        "ser"
+        "con"
+        "ftr";
   }
   header {
     width: 100%;
@@ -359,7 +359,8 @@ header h1 {
    border-right: 1px solid #fff;
  }
  #largeImage {
-   width: 400px;
+  width: 100%;
+   max-width: 400px;
    height: auto;
    display: block;
    border-radius: 10px;
@@ -368,6 +369,7 @@ header h1 {
 }
 
 .thumbnails {
+  width: 30%;
    display: flex;
    justify-content: left;
    gap: 10px;
